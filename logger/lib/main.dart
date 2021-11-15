@@ -71,20 +71,17 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
-        body: GestureDetector(
-          onDoubleTap: _getLogs,
-          child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Container(
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.red, width: 1)),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: SingleChildScrollView(
-                  child: Text(
-                    _logs,
-                    style: TextStyle(color: Colors.white),
-                  ),
+        body: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Container(
+            decoration:
+                BoxDecoration(border: Border.all(color: Colors.red, width: 1)),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SingleChildScrollView(
+                child: Text(
+                  _logs,
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
